@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+:root {
+  --one: #dd8766;
+  --two: #128084;
+  --three: #544766;
+  --four: #cf7672;
+  --five: #efb462;
+}
+
+/* ------- Generals ---------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Container */
+.container {
+  max-width: calc(100vw - 6rem * 2);
+  margin: 0 auto;
+}
+
+/* flex */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-center {
+  justify-content: center;
+}
+
+.f-end {
+  justify-content: flex-end;
+}
+
+/* center */
+.center {
+  text-align: center;
+}
+
+/* gaps */
+.gap {
+  padding: 1rem 0;
+}
+
+// CX
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn {
+  background: linear-gradient(45deg, red, blue);
+  color: white;
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border: 2px solid black;
+
+  &:hover {
+    background: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, red, blue);
+    border-image-slice: 3;
+  }
+}
+
+main {
+  min-height: 60vh;
+}
+
+.nav-bar {
+  padding: 2rem 0;
+}
